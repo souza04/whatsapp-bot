@@ -1,0 +1,10 @@
+services:
+  wppconnect:
+    image: wppconnect/server-cli:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - wppconnect_data:/usr/src/app/tokens
+
+volumes:
+  wppconnect_data:
